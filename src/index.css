@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* CSS Reset */
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F8F8;
+  color: #333333;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F8F8F8 !important;
+  color: #333333 !important;
+  line-height: 1.6;
+}
+
+#root {
+  background-color: #F8F8F8 !important;
+  min-height: 100vh;
+  color: #333333 !important;
+}
+
+/* Ensure all text elements use the correct colors */
+h1, h2, h3, h4, h5, h6, p, span, div {
+  color: inherit;
+}
+
+/* Ensure grid layouts work properly */
+.grid {
+  display: grid;
+}
+
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+/* Hero gradient */
+.hero-gradient {
+  background: linear-gradient(135deg, #0A3839 0%, #1a4a4b 50%, #0A3839 100%) !important;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #0A3839 0%, #2D5A5B 50%, #0A3839 100%) !important;
+  min-height: 100vh;
+}
